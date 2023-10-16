@@ -1,0 +1,21 @@
+{
+    "trips":[
+        {
+            "id":1,
+            "name":"2 days to chaung thar",
+            "price":500000
+
+        },
+         {
+             "id":2,
+            "name":"5 days to ngapali",
+            "price":700000
+
+        },
+         { "id":3,
+            "name":"one way to ngwe saung",
+            "price":200000
+
+        }
+    ]
+}
