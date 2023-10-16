@@ -1,10 +1,14 @@
 import React from 'react'
-
-export const Trip = ({ data }) => {
+import "./trip.css";
+export const Trip = ({ data, children }) => {
   return (
-    <div>
+    <div className='container'>
+      <p>READY TO GO?</p>
       {
-        data.map(data => <ul key={data.id}><li><h3>{data.name}</h3> price - {data.price} mmk</li></ul>)
-      }</div>
+        data.map(data => <ul key={data.id} className='trips-list'><li className='trip'>
+          <h3>{data.name}</h3><p>price - {data.price} mmk</p> </li></ul>)
+      }
+      {children}
+    </div>
   )
 }

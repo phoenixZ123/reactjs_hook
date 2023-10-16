@@ -2,19 +2,22 @@
     "trips":[
         {
             "id":1,
-            "name":"2 days to chaung thar",
-            "price":500000
+            "name":"2 days to refresh places ",
+            "price":500000,
+            "location":"landon"
 
         },
          {
              "id":2,
-            "name":"5 days to ngapali",
-            "price":700000
+            "name":"5 days to maxico",
+            "price":700000,
+            "location":"canada"
 
         },
          { "id":3,
-            "name":"one way to ngwe saung",
-            "price":200000
+            "name":"one way to paris bar",
+            "price":200000,
+            "location":"germany"
 
         }
     ]

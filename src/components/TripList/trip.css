@@ -1,0 +1,51 @@
+.container {
+  max-width: 800px;
+  margin: auto;
+}
+
+.container h1 {
+  text-align: center;
+}
+.container li {
+  list-style-type: none;
+}
+.container .flex-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.container button {
+  border: 1px solid gray;
+  background-color: #ba62f4;
+  color: white;
+  margin: 15px;
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+.trips-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.trip {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  border: 1px solid gray;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.trip h3 {
+  margin-right: 20px;
+}
