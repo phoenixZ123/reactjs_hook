@@ -5,8 +5,11 @@ export const useFetch = (url) => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
     useEffect(() => {
+        let abortController = new AbortController();
+        let signal = abortController.signal();
+
         setLoading(true)
-        fetch(url)
+        fetch(url, { signal })
             .then(res => {
                 if (!res.ok) {
                     throw Error("something was wrong");
@@ -20,6 +23,8 @@ export const useFetch = (url) => {
                 setLoading(false)
 
             }).catch(e => { setError(e.message); })
+        // cleanup function
+        return () => { abortController.abort(); }
     }, [url])
 
     return { data, loading, error }
